@@ -145,6 +145,7 @@ body {
   height: 100%;
   margin: 30px;
   font-size: 62.5%;
+  font-family: 'Oswald', sans-serif;
 }
 .nav {
   display: flex;
@@ -152,6 +153,17 @@ body {
   word-spacing: 40px;
   padding: 30px;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .nav .nav1 a {
+    flex-direction: column;
+    font-size: 5rem;
+    padding: 0px;
+    word-spacing: 0px;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
 }
 a:link,
 a:visited,
@@ -164,11 +176,24 @@ a {
   background: #dcd9d9;
   margin: 20px;
 }
+@media (max-width: 500px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .section1 .pic1 {
   align: left;
   width: 25vw;
   height: 35vh;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .section1 .pic1 {
+    display: none;
+  }
 }
 .section1 h1 {
   font-size: 5.6rem;
@@ -198,6 +223,14 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .section2 .listen {
   width: 50%;
 }
@@ -213,6 +246,7 @@ a {
 }
 .section2 h3 {
   font-size: 2.8rem;
+  padding-bottom: 10px;
 }
 .section2 .table {
   text-align: left;
